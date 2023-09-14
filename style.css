@@ -26,20 +26,22 @@ body{
     mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
 }
 
-  .hero .mask-container {
+.hero .mask-container {
     position: absolute;
     inset: 0;
 }
-.hero .content {
+
+.hero .content{
+    font-size: 3rem;
     padding: 1.4rem 7%;
     width: 100%;
     text-align: center;
     position: fixed;
     top: 100px;
   }
-  .hero .content h1 {
-    margin: 3rem;
-    font-size: 5em;
+  .hero .content h2 {
+    font-size: 2rem;
+    margin: 10px;
     color: #010101;
     text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
     line-height: 1.2;
@@ -50,7 +52,7 @@ body{
   
 .hero .content p {
     font-size: 1.5rem;
-    margin-top: 6rem;
+    margin-top: 7rem;
     line-height: 1.4;
     text-shadow: 1px 1px 3px rgba(5, 5, 12, 0.5);
     mix-blend-mode: difference;
