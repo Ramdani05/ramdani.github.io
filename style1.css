@@ -1,0 +1,55 @@
+
+/* img */
+.img-container{
+    text-align: center;
+}
+.img-container img{
+    border-radius: 25px;
+}
+
+/* audio */
+.audio-container{
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+audio {
+    width: 100%;
+    max-width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+    background-color: #757b80;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: #0078d4;
+    font-weight: bold;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    width: 100px;
+}
+
+/* mpas */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Menggunakan tinggi viewport untuk pusatkan elemen */
+    flex-direction: column; /* Stack elemen secara vertikal */
+}
+.maps-container,
+.video-container {
+        margin: 10px;
+        }
