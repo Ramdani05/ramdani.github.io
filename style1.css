@@ -1,10 +1,31 @@
-
-/* img */
-.img-container{
-    text-align: center;
+body{
+    background-color: #757b80;
 }
-.img-container img{
-    border-radius: 25px;
+.container {
+    display: flex;
+    align-items: center;
+}
+
+/* Gambar */
+.profile-image {
+    max-width: 250px;
+    margin-right: 20px;
+    margin: 100px;
+    border-radius: 150px;
+}
+
+/* Informasi Mahasiswa */
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* h2 */
+h2 {
+position: relative;
+top: -90px;
+font-family: 'poppins', sans-serif;
+font-style: italic;
 }
 
 /* audio */
@@ -16,9 +37,11 @@
 }
 
 audio {
+    position: relative;
+    top: -120px;
     width: 100%;
     max-width: 350px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 10px;
     padding: 5px;
 }
@@ -41,15 +64,18 @@ audio::-webkit-media-controls-volume-slider {
     width: 100px;
 }
 
-/* mpas */
+/* maps */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Menggunakan tinggi viewport untuk pusatkan elemen */
-    flex-direction: column; /* Stack elemen secara vertikal */
+    height: 100vh;
+    flex-direction: column;
 }
 .maps-container,
-.video-container {
-        margin: 10px;
-        }
+.video-container
+{
+    margin: 10px;
+    position: relative;
+    top: -100px;
+}
