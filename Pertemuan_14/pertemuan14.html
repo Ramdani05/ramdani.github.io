@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Luas Trapesium</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Kalkulator Luas Trapesium</h2>
+
+    <label for="garisAtas">Panjang Garis Atas: </label>
+    <input
+      type="number"
+      id="garisAtas"
+      placeholder="Masukkan panjang garis atas"
+      step="any"
+    /><br />
+
+    <label for="garisBawah">Panjang Garis Bawah: </label>
+    <input
+      type="number"
+      id="garisBawah"
+      placeholder="Masukkan panjang garis bawah"
+      step="any"
+    /><br />
+
+    <label for="tinggi">Tinggi: </label>
+    <input
+      type="number"
+      id="tinggi"
+      placeholder="Masukkan tinggi"
+      step="any"
+    /><br />
+
+    <button onclick="hitungLuas()">Hitung Luas</button>
+
+    <p id="hasilLuas"></p>
+
+    <script>
+      function hitungLuas() {
+        var garisAtas = parseFloat(document.getElementById("garisAtas").value);
+        var garisBawah = parseFloat(
+          document.getElementById("garisBawah").value
+        );
+        var tinggi = parseFloat(document.getElementById("tinggi").value);
+
+        var luas = 0.5 * (garisAtas + garisBawah) * tinggi;
+
+        document.getElementById("hasilLuas").innerHTML =
+          "Luas Trapesium: " + luas;
+      }
+    </script>
+  </body>
+</html>

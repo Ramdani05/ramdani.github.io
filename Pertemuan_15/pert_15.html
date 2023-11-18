@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirm Dialog Box</title>
+  </head>
+  <body>
+    <h2>Confirm Dialog Box</h2>
+
+    <button onclick="tampilkanConfirm()">Tampilkan Confirm</button>
+
+    <script>
+      function tampilkanConfirm() {
+        var konfirmasi = confirm("Apakah Anda yakin?");
+        if (konfirmasi) {
+          alert("Anda memilih OK!");
+        } else {
+          alert("Anda memilih Cancel!");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript dengan Alert, Prompt, Confirm, dan Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Fasilitas JavaScript</h2>
+
+    <button onclick="tampilkanAlert()">Tampilkan Alert</button>
+
+    <button onclick="tampilkanPrompt()">Tampilkan Prompt</button>
+
+    <button onclick="tampilkanConfirm()">Tampilkan Confirm</button>
+
+    <form id="formContoh">
+      <label for="inputText">Masukkan teks: </label>
+      <input type="text" id="inputText" />
+      <button type="button" onclick="prosesForm()">Proses Form</button>
+    </form>
+
+    <script>
+      function tampilkanAlert() {
+        alert("Ini adalah pesan menggunakan Alert!");
+      }
+
+      function tampilkanPrompt() {
+        var input = prompt("Masukkan sesuatu:", "Default Text");
+        if (input !== null) {
+          alert("Anda memasukkan: " + input);
+        }
+      }
+
+      function tampilkanConfirm() {
+        var konfirmasi = confirm("Apakah Anda yakin?");
+        if (konfirmasi) {
+          alert("Anda memilih OK!");
+        } else {
+          alert("Anda memilih Cancel!");
+        }
+      }
+
+      function prosesForm() {
+        var inputForm = document.getElementById("inputText").value;
+        alert("Anda memasukkan: " + inputForm);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh JavaScript dalam HTML</title>
+  </head>
+  <body>
+    <h2>Contoh JavaScript dalam HTML</h2>
+
+    <script>
+      document.write("<p>Hello, ini contoh JavaScript!</p>");
+    </script>
+
+    <button onclick="tampilkanAlert()">Klik</button>
+
+    <script>
+      function tampilkanAlert() {
+        alert("Tombol telah diklik!");
+      }
+    </script>
+
+    <label for="warnaInput">Pilih warna latar belakang: </label>
+    <input type="color" id="warnaInput" onchange="ubahWarnaLatar()" />
+
+    <script>
+      function ubahWarnaLatar() {
+        var warna = document.getElementById("warnaInput").value;
+        document.body.style.backgroundColor = warna;
+      }
+    </script>
+  </body>
+</html>
